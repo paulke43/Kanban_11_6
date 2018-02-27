@@ -23,10 +23,10 @@ $(document).ready(function(){
             var $columnAddCard = $('<button>').addClass('add-card').text('Dodaj kartę');
 
             // ADDING EVENTS
-            $columnDelete.click(function() { 
+            $columnDelete.on("click", function() { 
                 self.removeColumn(); 
             });
-            $columnAddCard.click(function() { 
+            $columnAddCard.on ("click", function() { 
                 self.addCard(new Card(prompt("Wpisz nazwę karty"))); 
             });
         
@@ -64,7 +64,7 @@ $(document).ready(function(){
                 $('<p>').addClass('card-description').text(self.description); 
             var $cardDelete = $('<button>').addClass('btn-delete').text('x');
             // BINDING TO CLICK EVENT
-            $cardDelete.click(function(){ 
+            $cardDelete.on("click", function() { 
                 self.removeCard(); 
             });
             // COMBINING BLOCKS AND RETURN THE CARD
@@ -98,7 +98,7 @@ $(document).ready(function(){
     }
 
     $('.create-column') 
-        .click(function(){ 
+        .on("click", function(){ 
             var name = prompt('Wpisz nazwę kolumny'); 
             var column = new Column(name); 
             board.addColumn(column); 
