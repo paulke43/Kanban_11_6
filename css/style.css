@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+body {
+  background-color: #592A71;
+  font-family: "Josefin Sans", sans-serif; }
+
+.board {
+  margin: 0 auto;
+  text-align: center;
+  width: 1200px;
+  background-color: #7B4E92;
+  border-radius: 2px;
+  box-shadow: 0 8px 6px -6px black; }
+  .board h1 {
+    color: white;
+    font-size: 40px;
+    padding-top: 10px; }
+  .board .create-column {
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #3D1151;
+    border-radius: 2px;
+    color: white; }
+    .board .create-column:hover {
+      color: white;
+      background-color: #592A71; }
+
+.column {
+  background-color: #A47FB7;
+  border-radius: 2px;
+  box-shadow: 0 8px 6px -6px black;
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 250px;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding-right: 5px;
+  min-height: 400px; }
+  .column .column-title {
+    color: #592A71; }
+
+.btn-delete {
+  color: #210331;
+  border: none;
+  cursor: pointer;
+  background-color: #A47FB7;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  float: right; }
+  .btn-delete:hover {
+    font-size: 25px;
+    color: red;
+    transition: font-size 0.5s, color 0.5s;
+    transition-timing-function: ease; }
+
+.card-list {
+  padding: 10px;
+  margin-top: 10px;
+  list-style-type: none; }
+  .card-list .card {
+    border: dashed 2px #296D96;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: #C7E3F4; }
+
+.card-description {
+  color: #592A71; }
+
+.column-add-card {
+  border: none;
+  border-radius: 2px;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #4385AC;
+  color: white; }
+  .column-add-card:hover {
+    cursor: pointer;
+    background-color: #592A71; }
+
+/*# sourceMappingURL=style.css.map */
