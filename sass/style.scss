@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+$background-color: #592A71;
+$font-family: 'Josefin Sans', sans-serif;
+$border-radius: 2px;
+$box-shadow: 0 8px 6px -6px black;
+
+body {
+    background-color: $background-color;
+    font-family: $font-family;
+}
+
+.board {
+    margin: 0 auto;
+    text-align: center;
+    width: 1200px;
+    background-color: #7B4E92;
+    border-radius: 2px;
+    box-shadow: 0 8px 6px -6px black;
+    h1 {
+        color: white;
+        font-size: 40px;
+        padding-top: 10px;
+    }
+    .create-column {
+        text-transform: uppercase;
+        cursor: pointer;
+        border: none;
+        font-size: 15px;
+        line-height: 40px;
+        margin-bottom: 10px;
+        font-family: $font-family;
+        background-color: #3D1151;
+        border-radius: $border-radius;
+        color: white;
+        &:hover {
+            color: white;
+            background-color: $background-color;
+        }
+    }
+}
+
+.column {
+    background-color: #A47FB7;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 250px;
+    margin-top: 20px;
+    margin-right: 10px;
+    padding-right: 5px;
+    min-height: 400px;
+    .column-title {
+        color: $background-color;
+    }      
+}
+
+.btn-delete {
+    color: #210331;
+    border: none;
+    cursor: pointer;
+    background-color: #A47FB7;
+    font-family: $font-family;
+    font-size: 20px;
+    line-height: 30px;
+    float: right;
+    &:hover {
+        font-size: 25px;
+        color: red;
+        transition: font-size 0.5s, color 0.5s;
+        transition-timing-function: ease;
+    }
+}
+
+.card-list {
+    padding: 10px;
+    margin-top: 10px;
+    list-style-type: none;
+    .card {
+        border: dashed 2px #296D96;
+        margin-top: 5px;
+        cursor: pointer;
+        background-color: #C7E3F4;
+    }
+}
+
+.card-description {
+    color: #592A71;
+}
+
+.column-add-card {
+    border: none;
+    border-radius: $border-radius;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: $font-family;
+    background-color: #4385AC;
+    color: white;
+    &:hover {
+        cursor: pointer;
+        background-color: $background-color;
+    }
+}
